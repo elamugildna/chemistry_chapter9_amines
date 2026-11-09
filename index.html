@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amines - KCET & NEET Master Study Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=X8oC9Wu2bfeyBb6MswdgTioQnZ6jOSC-XtIB6Ewn6oYzHEl0J2I2Hj-u16imYfFBfBfpvQEmtlYfSHhe5q9B6BXoBxR3yI38KQdD0kdYzqOSrgKI5N442CfKbGYHqfIIO85_LDekZOQxzaLNCPZx0lJKPojQwceEwkVckgYnU1XBVZn8avs_9eY1Njy5YKPA16tVWfXonKiJrcdPseSIkxpWdF73AMTRWYxMGEmFknyzUhg1eAw3CfUjzMo1p6GMGe3hrrRqgbTKG4SyLhOjubGna0qMpeBHHrYb33E8vdTmaZ60YfUj0MCloUrI7dX1MrVQ2bG4jcWoKxfw63JQFSMdRqrV_g6UA4FRw4_8WdS4IlmQRxRnfh8cAxphpZ1y" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jb250cmlidXRpb24udXNlcmNvbnRlbnQuZ29vZ2xlLmNvbS9kb3dubG9hZD9jPUNneGlZWEprWDNOMGIzSmhaMlVTVUJJTmNtVnpjRzl1YzJWZlpHRjBZUm9fQ2pBM09URTBNRGs0TnpFeU1EUXdPVEZrTURBd05qVm1aRE13WkRSaE1UQTVPVEF5WVRCbE9ESTRZVGd3WWpoaE1UY1NDeElIRUk3NzNmS3BDUmdCJmZpbGVuYW1lPWNoYXB0ZXI5X2FtaW5lc19rY2V0X25lZXRfbWFzdGVyX3N0dWR5X3BvcnRhbC5odG1sJm9waT0xMDMxMzUwNTA"/><style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --border-focus: #3b82f6;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --kcet-accent: #ea580c;
+      --neet-accent: #059669;
+      --correct-bg: #ecfdf5;
+      --correct-border: #10b981;
+      --correct-text: #065f46;
+      --wrong-bg: #fef2f2;
+      --wrong-border: #ef4444;
+      --wrong-text: #991b1b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding-bottom: 80px;
+    }
+
+    /* Global Header */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-avatar {
+      background: #3b82f6;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 7px 11px;
+      border-radius: 8px;
+      letter-spacing: 0.5px;
+    }
+    .brand-text h1 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .brand-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .top-nav {
+      display: flex;
+      gap: 6px;
+    }
+    .top-nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .top-nav-btn:hover {
+      color: var(--text-main);
+      background: #f1f5f9;
+    }
+    .top-nav-btn.active {
+      color: #3b82f6;
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      font-weight: 600;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    /* Back Link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #64748b;
+      text-decoration: none;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .back-link:hover { color: #1e293b; }
+
+    /* Bank Header Card */
+    .bank-header-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .bank-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .bank-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    /* Action Toolbar */
+    .action-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .btn-tool {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: #334155;
+      padding: 7px 15px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .btn-tool:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+    .btn-tool.active {
+      background: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+    .btn-tool.btn-print {
+      background: #0f172a;
+      color: #ffffff;
+      margin-left: auto;
+    }
+    .btn-tool.btn-print:hover {
+      background: #334155;
+    }
+
+    /* Filter & Search Bar */
+    .filter-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+    .search-input-wrap {
+      margin-bottom: 14px;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 13px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      background: #f8fafc;
+      transition: border-color 0.15s;
+    }
+    .search-input:focus {
+      border-color: var(--border-focus);
+      background: #ffffff;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .pill {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color: #475569;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .pill:hover {
+      background: #e2e8f0;
+    }
+    .pill.active {
+      background: #ea580c;
+      color: #ffffff;
+      border-color: #ea580c;
+    }
+    .pill.active-neet {
+      background: #059669;
+      color: #ffffff;
+      border-color: #059669;
+    }
+
+    /* Question Cards */
+    .q-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: border-color 0.15s;
+    }
+    .q-card:hover {
+      border-color: #cbd5e1;
+    }
+    .q-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .q-id-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .q-num-box {
+      background: #ea580c;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .q-num-box.neet-bg {
+      background: #059669;
+    }
+    .q-exam-year {
+      font-weight: 600;
+      font-size: 13px;
+      color: #1e293b;
+    }
+    .q-topic-tag {
+      font-size: 12px;
+      font-weight: 500;
+      color: #ea580c;
+    }
+    .q-topic-tag.neet-tag {
+      color: #059669;
+    }
+
+    .q-text {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.55;
+      margin-bottom: 16px;
+      white-space: pre-line;
+    }
+
+    /* Options */
+    .options-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .option-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.15s;
+      background: #ffffff;
+    }
+    .option-item:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+    .opt-letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    .option-item.show-correct {
+      background: var(--correct-bg);
+      border-color: var(--correct-border);
+      color: var(--correct-text);
+      font-weight: 600;
+    }
+    .option-item.show-correct .opt-letter {
+      background: #10b981;
+      color: #ffffff;
+    }
+    .option-item.selected-wrong {
+      background: var(--wrong-bg);
+      border-color: var(--wrong-border);
+      color: var(--wrong-text);
+      font-weight: 600;
+    }
+    .option-item.selected-wrong .opt-letter {
+      background: #ef4444;
+      color: #ffffff;
+    }
+
+    /* Solution Box */
+    .solution-box {
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+      border-radius: 0 0 8px 8px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: #475569;
+    }
+    .sol-header {
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .sol-text {
+      color: #334155;
+    }
+
+    /* Home View Card Styles (Directly Matching image_450726.jpg) */
+    .home-hero {
+      background: linear-gradient(135deg, #090e17 0%, #0d1527 60%, #172554 100%);
+      color: #ffffff;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .home-hero-tag {
+      display: inline-block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #93c5fd;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .home-hero h2 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    .home-hero p {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.6;
+      max-width: 820px;
+      margin-bottom: 24px;
+    }
+    .home-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-hero {
+      padding: 9px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+    }
+    .btn-hero-kcet {
+      background: #4f46e5;
+      color: #ffffff;
+    }
+    .btn-hero-kcet:hover { background: #4338ca; }
+    .btn-hero-neet {
+      background: #2563eb;
+      color: #ffffff;
+    }
+    .btn-hero-neet:hover { background: #1d4ed8; }
+    .btn-hero-outline {
+      background: rgba(255,255,255,0.08);
+      color: #e2e8f0;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-hero-outline:hover { background: rgba(255,255,255,0.15); }
+
+    /* Three Progress Stats Row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .stat-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+    .stat-val {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .stat-val.accent-kcet { color: #2563eb; }
+    .stat-val.accent-neet { color: #059669; }
+    .stat-sub {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    /* Modules Grid (2 Large Cards Matching Screenshot) */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .module-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: all 0.15s;
+    }
+    .module-card:hover {
+      border-color: #cbd5e1;
+    }
+    .mod-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .mod-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #eff6ff;
+      color: #2563eb;
+    }
+    .mod-count {
+      font-size: 12px;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+    .module-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+    .module-card p {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+    .mod-btn-group {
+      display: flex;
+      gap: 10px;
+    }
+    .mod-btn {
+      padding: 8px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      flex: 1;
+      transition: all 0.15s;
+    }
+    .mod-btn-kcet-read { background: #4f46e5; color: #ffffff; }
+    .mod-btn-kcet-read:hover { background: #4338ca; }
+    .mod-btn-kcet-quiz { background: #eff6ff; color: #3b82f6; border: 1px solid #bfdbfe; }
+    .mod-btn-kcet-quiz:hover { background: #dbeafe; }
+
+    .mod-btn-neet-read { background: #059669; color: #ffffff; }
+    .mod-btn-neet-read:hover { background: #047857; }
+    .mod-btn-neet-quiz { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+    .mod-btn-neet-quiz:hover { background: #d1fae5; }
+
+    /* Revision Notes Table */
+    .notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 13.5px;
+    }
+    .notes-table th, .notes-table td {
+      border: 1px solid #e2e8f0;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .notes-table th {
+      background: #f8fafc;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    @media print {
+      header, .top-nav, .action-toolbar, .filter-card, .back-link { display: none !important; }
+      body { background: white; color: black; font-size: 12pt; }
+      .container { max-width: 100%; margin: 0; padding: 0; }
+      .q-card { border: 1px solid #ddd; break-inside: avoid; margin-bottom: 14px; }
+      .solution-box { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Global Header -->
+  <header>
+    <div class="header-inner">
+      <div class="brand-wrap">
+        <div class="brand-avatar">AM</div>
+        <div class="brand-text">
+          <h1>Amines Study Portal</h1>
+          <p>KCET & NEET PYQ Question Banks • 110 Aligned Questions</p>
+        </div>
+      </div>
+      <div class="top-nav">
+        <button class="top-nav-btn active" id="nav-home" onclick="showTab('home')">Home Portal</button>
+        <button class="top-nav-btn" id="nav-kcet" onclick="showTab('kcet')">KCET Bank (45)</button>
+        <button class="top-nav-btn" id="nav-neet" onclick="showTab('neet')">NEET PYQ Bank (65)</button>
+        <button class="top-nav-btn" id="nav-notes" onclick="showTab('notes')">Revision Notes</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- TAB 1: HOME PORTAL (Matches image_450726.jpg) -->
+    <div id="view-home">
+      <div class="home-hero">
+        <span class="home-hero-tag">Complete Chemistry Exam Preparation Portal • NCERT Class 12 Chapter 9</span>
+        <h2>Amines: KCET & NEET PYQ Portal</h2>
+        <p>Comprehensive 110 question master preparation bank covering authentic KCET (2014–2026) and NEET/AIPMT (2000–2026) papers. Features structure and pyramidal geometry, basicity orders in aqueous and gaseous phases, Gabriel phthalimide synthesis limits, Hoffmann bromamide degradation, Hinsberg test distinctions, electrophilic substitution of aniline, and high-yield NCERT revision notes.</p>
+        <div class="home-hero-actions">
+          <button class="btn-hero btn-hero-kcet" onclick="showTab('kcet')">Open KCET Bank (45 Qs)</button>
+          <button class="btn-hero btn-hero-neet" onclick="showTab('neet')">Open NEET PYQ Bank (65 Qs)</button>
+          <button class="btn-hero btn-hero-outline" onclick="showTab('notes')">View Revision Notes</button>
+        </div>
+      </div>
+
+      <!-- Stats Progress Cards -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-title">TOTAL PORTAL BANK</div>
+          <div class="stat-val">110 Questions</div>
+          <div class="stat-sub">45 KCET + 65 NEET items</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-title">KCET PRACTICE PROGRESS</div>
+          <div class="stat-val accent-kcet" id="kcet-home-stat">0 / 45</div>
+          <div class="stat-sub" id="kcet-home-score">Score: 0 correct (0%)</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-title">NEET PYQ PROGRESS</div>
+          <div class="stat-val accent-neet" id="neet-home-stat">0 / 65</div>
+          <div class="stat-sub" id="neet-home-score">Score: 0 correct (0%)</div>
+        </div>
+      </div>
+
+      <!-- Module Navigation Cards -->
+      <div class="modules-grid">
+        <div class="module-card">
+          <div>
+            <div class="mod-header">
+              <span class="mod-badge">Module 1 • Q1–Q45</span>
+              <span class="mod-count">45 MCQs</span>
+            </div>
+            <h3>KCET Amines Question Bank</h3>
+            <p>Covers anilinium ion formation in nitration (KCET 2026), limitation of Gabriel synthesis for aniline (KCET 2026), aqueous basicity determining factors (KCET 2025), multi-step diazonium reduction to benzene (KCET 2025), and 2,4,6-tribromoaniline white precipitate.</p>
+          </div>
+          <div class="mod-btn-group">
+            <button class="mod-btn mod-btn-kcet-read" onclick="openBankMode('kcet', 'doc')">Read Question Bank</button>
+            <button class="mod-btn mod-btn-kcet-quiz" onclick="openBankMode('kcet', 'quiz')">Start Practice Quiz</button>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div>
+            <div class="mod-header">
+              <span class="mod-badge">Module 2 • Q1–Q65</span>
+              <span class="mod-count">65 MCQs</span>
+            </div>
+            <h3>NEET PYQ Amines Question Bank</h3>
+            <p>Includes gas-phase vs aqueous basicity statements (NEET 2026), butanamide degradation with propanol formation (NEET 2026), p-nitrotoluene redox comparison (NEET 2025), nitrile reduction reagent combinations (NEET 2025), and Hinsberg test separation archive.</p>
+          </div>
+          <div class="mod-btn-group">
+            <button class="mod-btn mod-btn-neet-read" onclick="openBankMode('neet', 'doc')">Read Question Bank</button>
+            <button class="mod-btn mod-btn-neet-quiz" onclick="openBankMode('neet', 'quiz')">Start Practice Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: KCET BANK VIEW (Matches image_457bff.jpg) -->
+    <div id="view-kcet" style="display: none;">
+      <a class="back-link" onclick="showTab('home')">← Back to Home Portal</a>
+
+      <div class="bank-header-card">
+        <h2 class="bank-title">KCET Amines Question Bank (45 Questions)</h2>
+        <p class="bank-subtitle">Karnataka CET Chemistry (2014–2026, including authentic 2025 & 2026 papers)</p>
+        
+        <div class="action-toolbar">
+          <button class="btn-tool active" id="kcet-mode-doc" onclick="setMode('kcet', 'doc')">Document View</button>
+          <button class="btn-tool" id="kcet-mode-quiz" onclick="setMode('kcet', 'quiz')">Practice Quiz</button>
+          <button class="btn-tool" id="kcet-toggle-ans" onclick="toggleAnswers('kcet')">Hide Answer Key</button>
+          <button class="btn-tool btn-print" onclick="window.print()">Print / Save PDF</button>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="search-input-wrap">
+          <input type="text" class="search-input" id="kcet-search" placeholder="Search basicity, Gabriel synthesis, Hinsberg, nitration, diazonium..." oninput="filterList('kcet')">
+        </div>
+        <div class="pill-list" id="kcet-pills">
+          <span class="pill active" onclick="filterCategory('kcet', 'All', this)">All</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Basicity of Amines & pKb Trends', this)">Basicity of Amines & pKb Trends</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Preparation Methods of Amines', this)">Preparation Methods of Amines</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Electrophilic Substitution of Aniline', this)">Electrophilic Substitution of Aniline</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Diazonium Salts & Synthetic Applications', this)">Diazonium Salts & Synthetic Applications</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Distinction & Chemical Tests', this)">Distinction & Chemical Tests</span>
+        </div>
+      </div>
+
+      <div id="kcet-questions-list"></div>
+    </div>
+
+    <!-- TAB 3: NEET BANK VIEW (Matches image_457bff.jpg) -->
+    <div id="view-neet" style="display: none;">
+      <a class="back-link" onclick="showTab('home')">← Back to Home Portal</a>
+
+      <div class="bank-header-card">
+        <h2 class="bank-title">NEET PYQ Amines Question Bank (65 Questions)</h2>
+        <p class="bank-subtitle">National Eligibility cum Entrance Test / AIPMT (2000–2026, including 2025 & 2026 papers)</p>
+        
+        <div class="action-toolbar">
+          <button class="btn-tool active" id="neet-mode-doc" onclick="setMode('neet', 'doc')">Document View</button>
+          <button class="btn-tool" id="neet-mode-quiz" onclick="setMode('neet', 'quiz')">Practice Quiz</button>
+          <button class="btn-tool" id="neet-toggle-ans" onclick="toggleAnswers('neet')">Hide Answer Key</button>
+          <button class="btn-tool btn-print" onclick="window.print()">Print / Save PDF</button>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="search-input-wrap">
+          <input type="text" class="search-input" id="neet-search" placeholder="Search carbylamine, Hoffmann, basicity, coupling, diazonium..." oninput="filterList('neet')">
+        </div>
+        <div class="pill-list" id="neet-pills">
+          <span class="pill active-neet" onclick="filterCategory('neet', 'All', this)">All</span>
+          <span class="pill" onclick="filterCategory('neet', 'Basicity Trends & Physical Properties', this)">Basicity Trends & Physical Properties</span>
+          <span class="pill" onclick="filterCategory('neet', 'Name Reactions & Degradation', this)">Name Reactions & Degradation</span>
+          <span class="pill" onclick="filterCategory('neet', 'Electrophilic Aromatic Substitution', this)">Electrophilic Aromatic Substitution</span>
+          <span class="pill" onclick="filterCategory('neet', 'Diazonium Salts & Coupling Reactions', this)">Diazonium Salts & Coupling Reactions</span>
+          <span class="pill" onclick="filterCategory('neet', 'Distinction & Separation Tests', this)">Distinction & Separation Tests</span>
+        </div>
+      </div>
+
+      <div id="neet-questions-list"></div>
+    </div>
+
+    <!-- TAB 4: REVISION NOTES -->
+    <div id="view-notes" style="display: none;">
+      <a class="back-link" onclick="showTab('home')">← Back to Home Portal</a>
+
+      <div class="bank-header-card">
+        <h2 class="bank-title">High-Yield Revision Notes: Amines & Diazonium Salts</h2>
+        <p class="bank-subtitle">NCERT Class 12 Unit 9 Essential Concepts, Comparison Tables & Key Reaction Mechanisms</p>
+      </div>
+
+      <div class="bank-header-card" style="margin-bottom: 20px;">
+        <h3 style="font-size: 16px; margin-bottom: 8px; color: #1e1b4b;">1. Basicity Order of Amines (Deciding Rules)</h3>
+        <table class="notes-table">
+          <thead>
+            <tr>
+              <th>Medium</th>
+              <th>Alkyl / Aryl Group</th>
+              <th>Basicity Order</th>
+              <th>Governing Factors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Gas Phase</strong></td>
+              <td>Any alkyl group</td>
+              <td><strong>3° > 2° > 1° > NH3</strong></td>
+              <td>Purely governed by +I electron-releasing inductive effect of alkyl groups.</td>
+            </tr>
+            <tr>
+              <td><strong>Aqueous Solution</strong></td>
+              <td>Ethyl (-C2H5)</td>
+              <td><strong>(C2H5)2NH > (C2H5)3N > C2H5NH2 > NH3</strong><br>(2° > 3° > 1° > NH3)</td>
+              <td>Interplay of inductive (+I), solvation (hydration), and steric hindrance.</td>
+            </tr>
+            <tr>
+              <td><strong>Aqueous Solution</strong></td>
+              <td>Methyl (-CH3)</td>
+              <td><strong>(CH3)2NH > CH3NH2 > (CH3)3N > NH3</strong><br>(2° > 1° > 3° > NH3)</td>
+              <td>Smaller methyl size creates less steric hindrance, making 1° hydration more favorable than 3°.</td>
+            </tr>
+            <tr>
+              <td><strong>Aromatic vs Aliphatic</strong></td>
+              <td>Phenyl vs Alkyl</td>
+              <td><strong>Aliphatic Amines > NH3 > Aniline</strong></td>
+              <td>In aniline, the lone pair delocalises into the benzene ring over 5 resonating structures; anilinium ion has only 2 structures.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bank-header-card" style="margin-bottom: 20px;">
+        <h3 style="font-size: 16px; margin-bottom: 8px; color: #1e1b4b;">2. Distinguishing Tests for 1°, 2°, and 3° Amines</h3>
+        <table class="notes-table">
+          <thead>
+            <tr>
+              <th>Test Reagent</th>
+              <th>Primary Amine (1°)</th>
+              <th>Secondary Amine (2°)</th>
+              <th>Tertiary Amine (3°)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hinsberg Reagent</strong><br>(C6H5SO2Cl)</td>
+              <td>Forms N-alkylbenzenesulphonamide which is <strong>soluble in aqueous KOH</strong> (acidic H on nitrogen).</td>
+              <td>Forms N,N-dialkylbenzenesulphonamide which is <strong>insoluble in aqueous alkali</strong> (no acidic H).</td>
+              <td><strong>Does not react</strong> (no replaceable H atom on nitrogen).</td>
+            </tr>
+            <tr>
+              <td><strong>Carbylamine Reaction</strong><br>(CHCl3 + alc. KOH, heat)</td>
+              <td><strong>Positive:</strong> Extremely foul-smelling isocyanide (R-NC) is formed.</td>
+              <td><strong>Negative:</strong> No reaction.</td>
+              <td><strong>Negative:</strong> No reaction.</td>
+            </tr>
+            <tr>
+              <td><strong>Nitrous Acid (HNO2)</strong><br>(NaNO2 + HCl at 273–278 K)</td>
+              <td>Aliphatic: Quantitatively liberates <strong>N2 gas</strong> and forms alcohol.<br>Aromatic: Forms arenediazonium chloride.</td>
+              <td>Forms yellow oily <strong>N-nitrosamine</strong>.</td>
+              <td>Forms soluble nitrite salt (aliphatic); undergoes ring nitrosation (aromatic).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bank-header-card">
+        <h3 style="font-size: 16px; margin-bottom: 8px; color: #1e1b4b;">3. Key Reaction Mechanisms & NCERT Exceptions</h3>
+        <ul style="padding-left: 20px; font-size: 13.5px; color: #334155; line-height: 1.8;">
+          <li><strong>Gabriel Phthalimide Synthesis:</strong> Used for preparing pure primary aliphatic amines. Aromatic primary amines cannot be prepared because aryl halides do not undergo nucleophilic substitution with phthalimide anion.</li>
+          <li><strong>Hoffmann Bromamide Degradation:</strong> Primary amide + Br2 + 4NaOH &rarr; Primary amine with one less carbon atom + Na2CO3 + 2NaBr + 2H2O.</li>
+          <li><strong>Aniline Nitration:</strong> Direct nitration with conc. HNO3/H2SO4 gives <strong>51% para, 47% meta, and 2% ortho</strong> because strongly acidic medium protonates aniline into meta-directing anilinium ion (-NH3+). Controlled nitration requires prior protection by acetylation to acetanilide.</li>
+          <li><strong>Friedel-Crafts Reaction:</strong> Aniline <em>fails to undergo Friedel-Crafts alkylation or acylation</em> because the basic -NH2 group forms an adduct salt with Lewis acid catalyst AlCl3.</li>
+          <li><strong>Sulphanilic Acid Zwitterion:</strong> Heating aniline with conc. H2SO4 at 453–473 K forms sulphanilic acid, which exists predominantly as the dipolar <strong>Zwitter ion</strong> (+NH3-C6H4-SO3-).</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const kcetData = [{"id": "k1", "exam": "KCET 2026", "topic": "Electrophilic Substitution of Aniline", "text": "Direct nitration of aniline with a mixture of concentrated HNO3 and concentrated H2SO4 yields a significant amount of m-nitroaniline (47%) because:", "options": ["In electrophilic substitution reactions, amino group is meta directing", "In strongly acidic medium, aniline is protonated to form anilinium ion which is meta directing", "-NH2 group always directs the incoming electrophile to meta position", "m-Nitroaniline has higher molecular mass and precipitates out first"], "correct": 1, "explanation": "In strongly acidic medium (conc. HNO3 + conc. H2SO4), aniline gets protonated to form anilinium ion (-NH3+), which is strongly deactivating and meta-directing. Hence, 47% m-nitroaniline is formed along with 51% p-nitroaniline and 2% o-nitroaniline."}, {"id": "k2", "exam": "KCET 2026", "topic": "Preparation Methods of Amines", "text": "The method by which aniline CANNOT be prepared is:", "options": ["Nitration of benzene followed by reduction with Sn and conc. HCl", "Degradation of benzamide with bromine in alkaline solution", "Reduction of nitrobenzene with H2 / Pd in ethanol", "Reaction of potassium phthalimide with chlorobenzene followed by alkaline hydrolysis"], "correct": 3, "explanation": "Aryl halides like chlorobenzene do not undergo nucleophilic substitution with the bulky phthalimide anion due to partial double bond character of C-Cl bond from resonance and steric repulsion. Hence, aromatic primary amines cannot be prepared by Gabriel phthalimide synthesis."}, {"id": "k3", "exam": "KCET 2025", "topic": "Basicity of Amines & pKb Trends", "text": "The basic strength of alkylamines in the aqueous phase is NOT decided by which of the following factors?", "options": ["Inductive effect (+I effect)", "Solvation effect (Hydration of substituted ammonium cation)", "Steric hindrance of alkyl groups", "Hyperconjugation effect"], "correct": 3, "explanation": "According to NCERT Class 12 Unit 9, the basicity of alkylamines in aqueous medium is governed by a subtle interplay of three factors: (1) Inductive effect (+I), (2) Solvation effect / extent of hydrogen bonding, and (3) Steric hindrance. Hyperconjugation has no role in determining amine basicity."}, {"id": "k4", "exam": "KCET 2025", "topic": "Diazonium Salts & Synthetic Applications", "text": "In the reaction sequence:\nBenzene + conc. HNO3/H2SO4 -> (A) --Fe/HCl--> (B) --NaNO2/HCl (273 K)--> (C) --C2H5OH, heat--> (D)\nThe organic compound (D) is:", "options": ["Phenol", "Benzene", "Ethanal", "Chlorobenzene"], "correct": 1, "explanation": "Benzene undergoes nitration to yield nitrobenzene (A). Fe/HCl reduces nitrobenzene to aniline (B). Diazotisation gives benzenediazonium chloride (C). Reaction of benzenediazonium chloride with mild reducing agent ethanol (C2H5OH) reduces it to benzene (D), with ethanol being oxidized to ethanal."}, {"id": "k5", "exam": "KCET 2024", "topic": "Basicity of Amines & pKb Trends", "text": "Benzylamine is a stronger base than aniline because:", "options": ["The lone pair on nitrogen in benzylamine is delocalised over the benzene ring", "The lone pair of electrons on nitrogen in aniline is delocalised into the benzene ring by resonance", "The lone pair of electrons on nitrogen in aniline is not involved in resonance", "Benzylamine has a higher molecular weight than aniline"], "correct": 1, "explanation": "In aniline, the lone pair on nitrogen is conjugated with the aromatic ring and delocalised over 5 resonance structures, making it less available for protonation. In benzylamine (C6H5CH2NH2), -NH2 is attached to an sp3 carbon; its lone pair is localized and readily available for protonation."}, {"id": "k6", "exam": "KCET 2024", "topic": "Preparation Methods of Amines", "text": "Which of the following amides will NOT undergo Hoffmann bromamide degradation reaction?", "options": ["CH3CONH2", "CH3CONHCH3", "C6H5CONH2", "CH3CH2CONH2"], "correct": 1, "explanation": "Hoffmann bromamide degradation is specific to primary amides of the formula R-CONH2. CH3CONHCH3 is a secondary (N-substituted) amide and cannot undergo this degradation."}, {"id": "k7", "exam": "KCET 2023", "topic": "Preparation Methods of Amines", "text": "In the reaction: 2-Bromopropane + alc. AgCN (heat) -> X --LiAlH4--> Y. The IUPAC name of product 'Y' is:", "options": ["N-Methylpropan-1-amine", "N-Methylpropan-2-amine", "Butan-2-amine", "Propan-2-amine"], "correct": 1, "explanation": "Reaction of 2-bromopropane with covalent AgCN gives isopropyl isocyanide, (CH3)2CH-NC. Reduction of isocyanides with LiAlH4 yields secondary amines: (CH3)2CH-NH-CH3, which is N-Methylpropan-2-amine."}, {"id": "k8", "exam": "KCET 2023", "topic": "Basicity of Amines & pKb Trends", "text": "The correct decreasing order of basic strength of ethyl-substituted amines in aqueous solution is:", "options": ["(C2H5)2NH > (C2H5)3N > C2H5NH2 > NH3", "(C2H5)3N > (C2H5)2NH > C2H5NH2 > NH3", "(C2H5)2NH > C2H5NH2 > (C2H5)3N > NH3", "C2H5NH2 > (C2H5)2NH > (C2H5)3N > NH3"], "correct": 0, "explanation": "For ethyl-substituted amines in aqueous solution, the order of basicity is Secondary > Tertiary > Primary > Ammonia: (C2H5)2NH > (C2H5)3N > C2H5NH2 > NH3 due to combined inductive, solvation, and steric effects."}, {"id": "k9", "exam": "KCET 2022", "topic": "Electrophilic Substitution of Aniline", "text": "Aniline reacts with bromine water at room temperature to give a white precipitate of:", "options": ["2-Bromoaniline", "4-Bromoaniline", "2,4,6-Tribromoaniline", "N,N-Dibromoaniline"], "correct": 2, "explanation": "The -NH2 group in aniline is strongly activating towards electrophilic aromatic substitution due to strong +R resonance donation. Bromination occurs simultaneously at all ortho and para positions, giving 2,4,6-tribromoaniline as a white precipitate."}, {"id": "k10", "exam": "KCET 2022", "topic": "Distinction & Chemical Tests", "text": "Which of the following reagents is known as Hinsberg's reagent?", "options": ["C6H5COCl", "CH3COCl", "C6H5SO2Cl", "C6H5CH2Cl"], "correct": 2, "explanation": "Benzenesulphonyl chloride (C6H5SO2Cl) is Hinsberg's reagent, used to distinguish between primary, secondary, and tertiary amines."}, {"id": "k11", "exam": "KCET 2021", "topic": "Electrophilic Substitution of Aniline", "text": "Aniline does not undergo Friedel-Crafts alkylation or acylation reaction because:", "options": ["Aniline is insoluble in anhydrous AlCl3", "The -NH2 group forms an adduct salt with Lewis acid AlCl3, acquiring a strong positive charge", "The amino group is meta-directing", "Friedel-Crafts reaction only occurs on aliphatic amines"], "correct": 1, "explanation": "Aniline acts as a Lewis base and donates its lone pair to anhydrous AlCl3 (Lewis acid) forming an adduct salt. The resulting -NH2(+)-AlCl3(-) group is strongly deactivating, which halts electrophilic substitution."}, {"id": "k12", "exam": "KCET 2021", "topic": "Basicity of Amines & pKb Trends", "text": "The correct order of increasing pKb values for: (A) Methanamine, (B) N,N-Dimethylmethanamine, (C) Benzenamine is:", "options": ["Methanamine < N,N-Dimethylmethanamine < Benzenamine", "Benzenamine < Methanamine < N,N-Dimethylmethanamine", "N,N-Dimethylmethanamine < Methanamine < Benzenamine", "Methanamine < Benzenamine < N,N-Dimethylmethanamine"], "correct": 0, "explanation": "Smaller pKb denotes a stronger base. Methanamine (pKb = 3.38), N,N-Dimethylmethanamine (pKb = 4.22), and Benzenamine (pKb = 9.38). Hence pKb order: Methanamine < N,N-Dimethylmethanamine < Benzenamine."}, {"id": "k13", "exam": "KCET 2020", "topic": "Diazonium Salts & Synthetic Applications", "text": "Benzenediazonium chloride reacts with phenol in alkaline medium (pH 9\u201310) to form:", "options": ["p-Aminoazobenzene (yellow dye)", "p-Hydroxyazobenzene (orange dye)", "o-Hydroxyazobenzene", "Chlorobenzene and phenol"], "correct": 1, "explanation": "In mildly alkaline medium, phenol is converted to phenoxide ion which couples at the para position with benzenediazonium cation to produce p-hydroxyazobenzene, an orange azo dye."}, {"id": "k14", "exam": "KCET 2019", "topic": "Distinction & Chemical Tests", "text": "Which of the following compounds gives a foul-smelling isocyanide on heating with chloroform and ethanolic KOH?", "options": ["(CH3)2NH", "(C2H5)3N", "C6H5NH2", "C6H5NHCH3"], "correct": 2, "explanation": "The carbylamine reaction is given exclusively by primary aliphatic and aromatic amines. Aniline (C6H5NH2) is a primary amine and produces phenyl isocyanide (foul smelling). Secondary and tertiary amines do not respond."}, {"id": "k15", "exam": "KCET 2018", "topic": "Electrophilic Substitution of Aniline", "text": "Sulphanilic acid prepared by heating aniline with concentrated H2SO4 at 453\u2013473 K exists as:", "options": ["An acidic cation", "A basic anion", "A dipolar Zwitter ion (+NH3-C6H4-SO3-)", "A non-polar covalent molecule"], "correct": 2, "explanation": "Sulphanilic acid contains both acidic (-SO3H) and basic (-NH2) groups in the same molecule. An internal proton transfer creates the dipolar Zwitter ion (+NH3-C6H4-SO3-)."}, {"id": "k16", "exam": "KCET 2017", "topic": "Preparation Methods of Amines", "text": "Reduction of ethanenitrile with sodium and ethanol (Na/C2H5OH) to give ethanamine is called:", "options": ["Mendius reaction", "Stephen reaction", "Rosenmund reduction", "Clemmensen reduction"], "correct": 0, "explanation": "Reduction of alkyl cyanides (nitriles) to primary amines using nascent hydrogen from sodium and ethanol is known as Mendius reaction."}, {"id": "k17", "exam": "KCET 2016", "topic": "Diazonium Salts & Synthetic Applications", "text": "When benzenediazonium chloride is treated with fluoroboric acid (HBF4) and heated, the product formed is:", "options": ["Chlorobenzene", "Fluorobenzene", "Bromobenzene", "Nitrobenzene"], "correct": 1, "explanation": "ArN2+Cl- + HBF4 -> ArN2+BF4- --heat--> ArF + BF3 + N2. This is the Balz-Schiemann reaction for synthesizing fluorobenzene."}, {"id": "k18", "exam": "KCET 2015", "topic": "Basicity of Amines & pKb Trends", "text": "The geometry and hybridization of the nitrogen atom in trimethylamine are respectively:", "options": ["Trigonal planar, sp2", "Pyramidal, sp3", "Tetrahedral, sp3", "T-shaped, sp3d"], "correct": 1, "explanation": "Nitrogen in trimethylamine forms 3 sigma bonds and possesses 1 lone pair, adopting sp3 hybridization. Due to lone pair-bond pair repulsion, its geometry is pyramidal with a C-N-C angle of 108\u00b0."}, {"id": "k19", "exam": "KCET 2014", "topic": "Preparation Methods of Amines", "text": "In the reduction of nitrobenzene to aniline, the reagent combination preferred commercially because only a small amount of hydrochloric acid is needed to initiate the reaction is:", "options": ["Sn and conc. HCl", "Fe scrap and HCl", "LiAlH4 in ether", "Na/Hg and ethanol"], "correct": 1, "explanation": "Reduction with iron scrap and hydrochloric acid is preferred industrially because FeCl2 formed gets hydrolysed to release HCl during the reaction. Thus, only a small amount of HCl is required to initiate the reaction."}, {"id": "k20", "exam": "KCET 2014", "topic": "Distinction & Chemical Tests", "text": "Primary aliphatic amines react with cold nitrous acid (HNO2) to produce:", "options": ["Stable diazonium salt", "Quantitative liberation of N2 gas and alcohol", "Nitroalkane", "Secondary amine"], "correct": 1, "explanation": "Primary aliphatic amines react with HNO2 to form highly unstable alkyldiazonium salts which decompose immediately to liberate N2 gas quantitatively along with alcohols."}, {"id": "k21", "exam": "KCET 2024", "topic": "Basicity of Amines & pKb Trends", "text": "Which of the following amines has the highest boiling point among isomeric amines of molar mass 73?", "options": ["n-Butylamine", "Diethylamine", "N,N-Dimethylethylamine", "2-Methylpropan-2-amine"], "correct": 0, "explanation": "Primary amines (n-butylamine) have two hydrogen atoms bonded to nitrogen, allowing extensive intermolecular hydrogen bonding compared to secondary and tertiary amines."}, {"id": "k22", "exam": "KCET 2023", "topic": "Preparation Methods of Amines", "text": "Hoffmann bromamide reaction of ethanamide produces:", "options": ["Methanamine", "Ethanamine", "Propanamine", "Nitromethane"], "correct": 0, "explanation": "Hoffmann degradation involves loss of the carbonyl carbon, producing a primary amine with one carbon less: CH3CONH2 -> CH3NH2."}, {"id": "k23", "exam": "KCET 2022", "topic": "Diazonium Salts & Synthetic Applications", "text": "Replacement of diazonium group by chlorine using copper powder and HCl is known as:", "options": ["Sandmeyer reaction", "Gatterman reaction", "Etard reaction", "Wurtz-Fittig reaction"], "correct": 1, "explanation": "Using Cu powder with halogen acid (HCl/HBr) is the Gatterman reaction; using Cu(I) salts (Cu2Cl2/Cu2Br2) is the Sandmeyer reaction."}, {"id": "k24", "exam": "KCET 2021", "topic": "Distinction & Chemical Tests", "text": "Which of the following compounds does not react with benzenesulphonyl chloride?", "options": ["Triethylamine", "Ethylamine", "Diethylamine", "Aniline"], "correct": 0, "explanation": "Triethylamine is a tertiary amine with no replaceable hydrogen on nitrogen, so it does not react with Hinsberg reagent."}, {"id": "k25", "exam": "KCET 2020", "topic": "Electrophilic Substitution of Aniline", "text": "Monobromination of aniline at para position is achieved by first treating aniline with:", "options": ["Acetic anhydride in pyridine", "Bromine water", "Conc. HNO3", "Chloroform and KOH"], "correct": 0, "explanation": "Acetylation of aniline protects the -NH2 group as acetanilide, reducing its ring-activating power and preventing polybromination."}, {"id": "k26", "exam": "KCET 2019", "topic": "Basicity of Amines & pKb Trends", "text": "Decreasing order of basic strength in gaseous phase is:", "options": ["3\u00b0 > 2\u00b0 > 1\u00b0 > NH3", "2\u00b0 > 3\u00b0 > 1\u00b0 > NH3", "1\u00b0 > 2\u00b0 > 3\u00b0 > NH3", "NH3 > 1\u00b0 > 2\u00b0 > 3\u00b0"], "correct": 0, "explanation": "In the gaseous phase without solvent effects, basicity is governed purely by +I inductive effect: 3\u00b0 > 2\u00b0 > 1\u00b0 > NH3."}, {"id": "k27", "exam": "KCET 2018", "topic": "Preparation Methods of Amines", "text": "Ammonolysis of alkyl halides with excess ammonia produces mainly:", "options": ["Primary amine", "Secondary amine", "Tertiary amine", "Quaternary ammonium salt"], "correct": 0, "explanation": "Using a large excess of ammonia favors nucleophilic attack on the alkyl halide, making the primary amine the major product."}, {"id": "k28", "exam": "KCET 2017", "topic": "Diazonium Salts & Synthetic Applications", "text": "Benzenediazonium chloride reacts with hypophosphorous acid (H3PO2) in water to yield:", "options": ["Benzene", "Phenol", "Chlorobenzene", "Aniline"], "correct": 0, "explanation": "H3PO2 reduces diazonium salts to arenes (benzene), while H3PO2 oxidises to H3PO3."}, {"id": "k29", "exam": "KCET 2016", "topic": "Distinction & Chemical Tests", "text": "A positive carbylamine test is characterized by the release of:", "options": ["An extremely foul smell of isocyanide", "Dense white fumes of ammonium chloride", "Foul smell of rotten eggs", "Fruity ester odour"], "correct": 0, "explanation": "Carbylamines (isocyanides) have an unmistakable extremely foul and repulsive odour."}, {"id": "k30", "exam": "KCET 2015", "topic": "Electrophilic Substitution of Aniline", "text": "When aniline is acetylated with acetic anhydride, the product is:", "options": ["Acetanilide", "p-Aminoacetophenone", "o-Aminoacetophenone", "Benzylamine"], "correct": 0, "explanation": "Aniline undergoes nucleophilic acyl substitution on acetic anhydride to yield N-phenylethanamide (acetanilide)."}, {"id": "k31", "exam": "KCET 2020", "topic": "Basicity of Amines & pKb Trends", "text": "Which of the following is the strongest base in aqueous solution?", "options": ["(CH3)2NH", "CH3NH2", "(CH3)3N", "NH3"], "correct": 0, "explanation": "For methyl-substituted amines in aqueous medium, the order is 2\u00b0 > 1\u00b0 > 3\u00b0 > NH3: dimethylamine is strongest."}, {"id": "k32", "exam": "KCET 2019", "topic": "Preparation Methods of Amines", "text": "Gabriel phthalimide synthesis is used for the preparation of:", "options": ["Primary aliphatic amines", "Primary aromatic amines", "Secondary amines", "Tertiary amines"], "correct": 0, "explanation": "Gabriel synthesis is strictly applicable to primary aliphatic amines because aryl halides do not undergo nucleophilic substitution."}, {"id": "k33", "exam": "KCET 2018", "topic": "Diazonium Salts & Synthetic Applications", "text": "Coupling reaction of benzenediazonium chloride with aniline in weakly acidic medium forms:", "options": ["p-Aminoazobenzene (yellow dye)", "p-Hydroxyazobenzene", "Benzene", "Chlorobenzene"], "correct": 0, "explanation": "Coupling with aniline occurs at pH 4\u20135 to give p-aminoazobenzene, a yellow azo dye."}, {"id": "k34", "exam": "KCET 2017", "topic": "Basicity of Amines & pKb Trends", "text": "The pKb value of aniline is higher than that of methylamine because:", "options": ["The lone pair on nitrogen in aniline is delocalised into the benzene ring", "Aniline is an aliphatic amine", "Methyl group has -I effect", "Anilinium ion is more stable than aniline"], "correct": 0, "explanation": "Delocalisation of nitrogen lone pair into benzene ring reduces basicity, resulting in higher pKb (9.38 vs 3.38)."}, {"id": "k35", "exam": "KCET 2016", "topic": "Electrophilic Substitution of Aniline", "text": "Aniline on heating with concentrated sulphuric acid at 453\u2013473 K forms:", "options": ["Sulphanilic acid", "Benzene sulphonic acid", "o-Nitroaniline", "p-Bromoaniline"], "correct": 0, "explanation": "Heating aniline with conc. H2SO4 yields anilinium hydrogensulphate which rearranges to sulphanilic acid."}, {"id": "k36", "exam": "KCET 2015", "topic": "Preparation Methods of Amines", "text": "Which of the following compounds on reduction with LiAlH4 yields ethanamine?", "options": ["Ethanamide", "Methanamide", "Nitromethane", "Propanenitrile"], "correct": 0, "explanation": "Reduction of ethanamide (CH3CONH2) with LiAlH4 yields ethanamine (CH3CH2NH2) with retention of carbon count."}, {"id": "k37", "exam": "KCET 2014", "topic": "Diazonium Salts & Synthetic Applications", "text": "Conversion of benzenediazonium chloride to iodobenzene is carried out by warming with:", "options": ["Aqueous KI", "I2 and red P", "HI in ether", "Cu2I2 / HI"], "correct": 0, "explanation": "Iodine is introduced into the benzene ring simply by warming diazonium salt solution with potassium iodide (KI)."}, {"id": "k38", "exam": "KCET 2021", "topic": "Basicity of Amines & pKb Trends", "text": "The order of boiling points among isomeric amines is:", "options": ["Primary > Secondary > Tertiary", "Tertiary > Secondary > Primary", "Secondary > Primary > Tertiary", "Tertiary > Primary > Secondary"], "correct": 0, "explanation": "Primary amines have two N-H bonds (maximum intermolecular H-bonding), secondary have one, and tertiary have none."}, {"id": "k39", "exam": "KCET 2018", "topic": "Distinction & Chemical Tests", "text": "Treatment of diethylamine with Hinsberg's reagent forms a precipitate that is:", "options": ["Insoluble in aqueous KOH", "Soluble in aqueous KOH", "Soluble in conc. HCl", "Decomposed into alcohol"], "correct": 0, "explanation": "N,N-Diethylbenzenesulphonamide has no acidic hydrogen on nitrogen, hence it is insoluble in alkali."}, {"id": "k40", "exam": "KCET 2017", "topic": "Electrophilic Substitution of Aniline", "text": "Aniline does not react with which of the following reagents under normal conditions?", "options": ["CH3Cl / anhydrous AlCl3", "Br2 / H2O", "HNO3 / H2SO4", "(CH3CO)2O / Pyridine"], "correct": 0, "explanation": "Aniline forms an inactive adduct with Lewis acid AlCl3 and fails to undergo Friedel-Crafts reaction."}, {"id": "k41", "exam": "KCET 2016", "topic": "Preparation Methods of Amines", "text": "The IUPAC name of (CH3)2CH-NH2 is:", "options": ["Propan-2-amine", "Propan-1-amine", "Dimethanamine", "Ethanamine"], "correct": 0, "explanation": "The parent propane chain has an amino group on carbon 2: Propan-2-amine."}, {"id": "k42", "exam": "KCET 2015", "topic": "Basicity of Amines & pKb Trends", "text": "Which of the following amines is least basic in aqueous solution?", "options": ["C6H5NH2", "CH3NH2", "(CH3)2NH", "(CH3)3N"], "correct": 0, "explanation": "Aniline (C6H5NH2) is aromatic and has its lone pair conjugated into the ring, making it the weakest base."}, {"id": "k43", "exam": "KCET 2014", "topic": "Diazonium Salts & Synthetic Applications", "text": "Diazonium salts are very useful intermediates because the diazo group can be replaced by:", "options": ["-Cl, -Br, -I, -CN, -OH, -F", "-CH3 and -C2H5 only", "-SO3H and -COOH only", "Halogens only"], "correct": 0, "explanation": "The diazo group is a versatile leaving group replaced readily by halogens, cyanide, hydroxyl, and hydrogen."}, {"id": "k44", "exam": "KCET 2019", "topic": "Preparation Methods of Amines", "text": "In Gabriel phthalimide synthesis, the intermediate that reacts with alkyl halide is:", "options": ["Potassium phthalimide anion", "Phthalic acid", "Phthalamide", "Ammonium phthalate"], "correct": 0, "explanation": "Potassium phthalimide forms a resonance-stabilised nucleophilic anion that displaces halide from 1\u00b0 alkyl halides."}, {"id": "k45", "exam": "KCET 2018", "topic": "Electrophilic Substitution of Aniline", "text": "Which reagent is used to convert nitrobenzene to aniline in acidic medium?", "options": ["Fe and conc. HCl", "NaOH", "KMnO4", "LiAlH4 in ether"], "correct": 0, "explanation": "Fe + HCl or Sn + HCl smoothly reduces the nitro group to an amino group."}];
+    const neetData = [{"id": "n1", "exam": "NEET 2026", "topic": "Basicity Trends & Physical Properties", "text": "Given below are two statements:\nStatement I: The basic strength of alkylamines in the gas phase follows the order: 3\u00b0 amine > 2\u00b0 amine > 1\u00b0 amine > NH3.\nStatement II: In aqueous solution, the basicity of alkylamines is governed solely by the +I inductive effect of alkyl groups.\nIn light of the above statements, choose the correct answer:", "options": ["Both Statement I and Statement II are correct", "Both Statement I and Statement II are incorrect", "Statement I is correct but Statement II is incorrect", "Statement I is incorrect but Statement II is correct"], "correct": 2, "explanation": "Statement I is correct: in the gas phase without solvent stabilization, +I inductive effect purely dictates electron density on nitrogen (3\u00b0 > 2\u00b0 > 1\u00b0 > NH3). Statement II is incorrect: in aqueous medium, basicity is governed by a combination of inductive effect, solvation of conjugate cations, and steric hindrance."}, {"id": "n2", "exam": "NEET 2026", "topic": "Name Reactions & Degradation", "text": "A primary amide (X) on reaction with Br2 and aqueous KOH yields an amine (Y). Amine (Y) on treatment with nitrous acid at room temperature liberates nitrogen gas and forms propan-1-ol. Compound (X) is:", "options": ["Propanamide", "Butanamide", "Ethanamide", "Pentanamide"], "correct": 1, "explanation": "Amine (Y) produces propan-1-ol and N2 gas with HNO2, confirming Y is propan-1-amine (3 carbons). Because Y was formed by Hoffmann bromamide degradation (which removes one carbon atom), the starting amide (X) must have 4 carbons: butanamide (CH3CH2CH2CONH2)."}, {"id": "n3", "exam": "NEET 2025", "topic": "Basicity Trends & Physical Properties", "text": "Given below are two statements:\nStatement I: Oxidation of p-nitrotoluene with acidic KMnO4 gives an acid that is stronger than benzoic acid.\nStatement II: Reduction of p-nitrotoluene with Sn/HCl followed by neutralization gives an amine that is more basic than aniline.\nIn light of the above statements, choose the most appropriate answer:", "options": ["Both Statement I and Statement II are correct", "Both Statement I and Statement II are incorrect", "Statement I is correct but Statement II is incorrect", "Statement I is incorrect but Statement II is correct"], "correct": 0, "explanation": "Both statements are correct. Oxidation of p-nitrotoluene yields p-nitrobenzoic acid (-NO2 withdraws electrons, stabilizing conjugate base and increasing acidity). Reduction of p-nitrotoluene gives p-toluidine (4-methylaniline), where the electron-donating methyl group (+I, hyperconjugation) increases electron density on nitrogen, making it more basic than aniline."}, {"id": "n4", "exam": "NEET 2025", "topic": "Name Reactions & Degradation", "text": "Which of the following reagent combinations can be used to reduce nitriles (R-C\u2261N) to primary amines (R-CH2-NH2)?\n(A) LiAlH4 followed by H2O\n(B) Sn + conc. HCl\n(C) H2 / Ni\n(D) Na(Hg) / C2H5OH\n(E) Br2 / aq. NaOH", "options": ["(A), (C) and (D) only", "(A), (B) and (C) only", "(B), (C) and (E) only", "(A), (D) and (E) only"], "correct": 0, "explanation": "According to NCERT Class 12 Section 9.4, catalytic hydrogenation (H2/Ni), chemical reduction with sodium amalgam and alcohol [Na(Hg)/C2H5OH], and lithium aluminium hydride (LiAlH4) selectively reduce nitriles to primary amines. Sn/HCl is used for nitro reduction, and Br2/NaOH is for amides."}, {"id": "n5", "exam": "NEET 2024", "topic": "Distinction & Separation Tests", "text": "An organic compound (C3H9N) reacts with benzenesulphonyl chloride to give a solid precipitate which is completely insoluble in aqueous KOH. The compound is:", "options": ["Propan-1-amine", "N-Methylethanamine", "N,N-Dimethylmethanamine", "Propan-2-amine"], "correct": 1, "explanation": "Secondary amines like N-methylethanamine (CH3-NH-C2H5) react with Hinsberg's reagent to form N,N-disubstituted sulphonamides lacking acidic hydrogen on nitrogen, making them insoluble in aqueous alkali (KOH)."}, {"id": "n6", "exam": "NEET 2024", "topic": "Diazonium Salts & Coupling Reactions", "text": "Arenediazonium salts are stable for a short time in cold aqueous solution (273\u2013278 K), whereas alkyldiazonium salts decompose instantaneously even at 0\u00b0C. The enhanced stability of arenediazonium ions is due to:", "options": ["Inductive effect of the aryl group", "Resonance delocalisation of the positive charge onto the benzene ring", "Hyperconjugation with the aromatic ring", "Steric hindrance by ortho-hydrogens"], "correct": 1, "explanation": "In arenediazonium ions (Ar-N2+), the diazonium group is conjugated with the aromatic pi system. Delocalisation of the positive charge across the ring provides kinetic stability at 273\u2013278 K."}, {"id": "n7", "exam": "NEET 2023", "topic": "Basicity Trends & Physical Properties", "text": "The correct order of basic strength of methyl-substituted amines in aqueous medium is:", "options": ["(CH3)2NH > CH3NH2 > (CH3)3N > NH3", "(CH3)3N > (CH3)2NH > CH3NH2 > NH3", "CH3NH2 > (CH3)2NH > (CH3)3N > NH3", "(CH3)2NH > (CH3)3N > CH3NH2 > NH3"], "correct": 0, "explanation": "In aqueous medium, methyl-substituted amines follow 2\u00b0 > 1\u00b0 > 3\u00b0 > NH3: (CH3)2NH > CH3NH2 > (CH3)3N > NH3. The tertiary amine is destabilized by steric hindrance to hydration of its conjugate cation."}, {"id": "n8", "exam": "NEET 2023", "topic": "Distinction & Separation Tests", "text": "Which of the following compounds will give carbylamine reaction on heating with chloroform and alc. KOH?", "options": ["N,N-Diethylethanamine", "N-Methylaniline", "Ethanamine", "N-Ethylethanamine"], "correct": 2, "explanation": "Carbylamine test is specific to primary amines (both aliphatic and aromatic). Ethanamine is a primary amine. N-Methylaniline and N-ethylethanamine are secondary, and N,N-diethylethanamine is tertiary."}, {"id": "n9", "exam": "NEET 2022", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following statements regarding the basicity of arylamines is CORRECT?", "options": ["Arylamines are generally more basic than alkylamines because nitrogen is sp2 hybridized", "Arylamines are generally less basic than alkylamines because the nitrogen lone pair electrons are delocalised by interaction with the aromatic pi-electron system", "Arylamines are more basic than ammonia due to +I effect of the benzene ring", "Arylamines are less basic than alkylamines solely due to steric hindrance"], "correct": 1, "explanation": "Arylamines like aniline are much weaker bases than alkylamines and ammonia because the nitrogen lone pair is delocalised into the benzene ring across five resonating structures, making it unavailable for protonation."}, {"id": "n10", "exam": "NEET 2022", "topic": "Name Reactions & Degradation", "text": "In the Hoffmann bromamide degradation reaction, the number of moles of NaOH and Br2 used per mole of primary amide are:", "options": ["4 moles of NaOH and 1 mole of Br2", "2 moles of NaOH and 2 moles of Br2", "1 mole of NaOH and 1 mole of Br2", "4 moles of NaOH and 2 moles of Br2"], "correct": 0, "explanation": "Stoichiometry of Hoffmann degradation: R-CONH2 + Br2 + 4NaOH -> R-NH2 + Na2CO3 + 2NaBr + 2H2O. Thus, 1 mole of Br2 and 4 moles of NaOH are consumed per mole of amide."}, {"id": "n11", "exam": "NEET 2021", "topic": "Distinction & Separation Tests", "text": "The amine that does NOT react with benzenesulphonyl chloride (Hinsberg's reagent) is:", "options": ["(CH3)3N", "CH3CH2NH2", "(CH3CH2)2NH", "C6H5NH2"], "correct": 0, "explanation": "Trimethylamine (CH3)3N is a tertiary amine with no replaceable hydrogen on nitrogen; hence it cannot react with benzenesulphonyl chloride."}, {"id": "n12", "exam": "NEET 2021", "topic": "Diazonium Salts & Coupling Reactions", "text": "Aniline on treatment with NaNO2 + HCl at 273\u2013278 K followed by treatment with hypophosphorous acid (H3PO2) in water gives:", "options": ["Phenol", "Benzene", "Chlorobenzene", "Nitrobenzene"], "correct": 1, "explanation": "Diazotisation converts aniline into benzenediazonium chloride. Hypophosphorous acid (H3PO2) reduces the diazonium group to benzene: ArN2+Cl- + H3PO2 + H2O -> ArH + N2 + H3PO3 + HCl."}, {"id": "n13", "exam": "NEET 2020", "topic": "Electrophilic Aromatic Substitution", "text": "To prepare 4-bromoaniline from aniline as the major product, the amino group must be protected before bromination by:", "options": ["Treatment with excess concentrated HCl", "Acetylation with acetic anhydride in pyridine", "Diazotisation with NaNO2 / HCl", "Nitration with fuming HNO3"], "correct": 1, "explanation": "Direct bromination yields 2,4,6-tribromoaniline. Protecting -NH2 as acetanilide (-NHCOCH3) reduces nitrogen lone pair availability through resonance with carbonyl oxygen, moderating activation to permit monobromination at the para position."}, {"id": "n14", "exam": "NEET 2019", "topic": "Basicity Trends & Physical Properties", "text": "The correct increasing order of basic strength of the following compounds is:\n(I) 4-Nitroaniline\n(II) Aniline\n(III) 4-Toluidine", "options": ["I < II < III", "III < II < I", "II < I < III", "I < III < II"], "correct": 0, "explanation": "-NO2 is electron-withdrawing (-M, -I), decreasing electron density on nitrogen and weakening basicity. -CH3 is electron-donating (+I, hyperconjugation), increasing basicity over aniline. Hence: 4-Nitroaniline < Aniline < 4-Toluidine."}, {"id": "n15", "exam": "NEET 2018", "topic": "Name Reactions & Degradation", "text": "In the reaction of an amide with Br2 and alkali, the carbonyl carbon of the amide is eliminated as:", "options": ["Carbon monoxide (CO)", "Carbon dioxide (CO2)", "Carbonate ion (CO3^2-)", "Formate ion (HCOO-)"], "correct": 2, "explanation": "In Hoffmann degradation, the alkyl group migrates to the nitrogen of isocyanate (R-N=C=O), which upon basic hydrolysis releases the carbonyl carbon as sodium carbonate (Na2CO3)."}, {"id": "n16", "exam": "NEET 2017", "topic": "Name Reactions & Degradation", "text": "Which of the following reactions is appropriate for converting acetamide (CH3CONH2) to methanamine (CH3NH2)?", "options": ["Stephen's reaction", "Gabriel phthalimide synthesis", "Hoffmann bromamide reaction", "Carbylamine reaction"], "correct": 2, "explanation": "Hoffmann bromamide degradation converts primary amides into primary amines with descent of series (loss of one carbon): CH3CONH2 + Br2 + 4NaOH -> CH3NH2."}, {"id": "n17", "exam": "NEET 2016", "topic": "Diazonium Salts & Coupling Reactions", "text": "When benzenediazonium chloride reacts with CuCN/KCN, the reaction is known as:", "options": ["Sandmeyer reaction", "Gatterman reaction", "Etard reaction", "Stephen reaction"], "correct": 0, "explanation": "Replacement of diazonium group by -Cl, -Br, or -CN using copper(I) salts (Cu2Cl2, Cu2Br2, or CuCN) is the Sandmeyer reaction."}, {"id": "n18", "exam": "NEET 2015", "topic": "Electrophilic Aromatic Substitution", "text": "The electrolytic reduction of nitrobenzene in strongly acidic medium produces:", "options": ["Aniline", "Azobenzene", "p-Aminophenol", "Azoxybenzene"], "correct": 2, "explanation": "Electrolytic reduction of nitrobenzene in strongly acidic medium proceeds via phenylhydroxylamine, which rearranges to form 4-aminophenol (p-aminophenol)."}, {"id": "n19", "exam": "NEET 2015", "topic": "Name Reactions & Degradation", "text": "Which of the following compounds on reduction with LiAlH4 yields a secondary amine?", "options": ["Methyl cyanide (CH3CN)", "Methyl isocyanide (CH3NC)", "Acetamide (CH3CONH2)", "Nitroethane (CH3CH2NO2)"], "correct": 1, "explanation": "Isocyanides reduce to secondary amines having a methyl group: CH3NC + 4[H] -> CH3-NH-CH3 (dimethylamine). Nitriles, primary amides, and nitroalkanes reduce to primary amines."}, {"id": "n20", "exam": "NEET 2014", "topic": "Diazonium Salts & Coupling Reactions", "text": "When benzenediazonium chloride is warmed with water at 283 K, the product formed is:", "options": ["Chlorobenzene", "Phenol", "Aniline", "Benzene"], "correct": 1, "explanation": "Warming arenediazonium salt solution above 278 K causes hydrolysis: C6H5N2+Cl- + H2O -> C6H5OH + N2 + HCl."}, {"id": "n21", "exam": "NEET 2013", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following is the weakest Br\u00f8nsted base?", "options": ["Aniline (C6H5NH2)", "Ammonia (NH3)", "Ethanamine (C2H5NH2)", "Diphenylamine ((C6H5)2NH)"], "correct": 3, "explanation": "In diphenylamine, the lone pair on nitrogen is delocalised into two benzene rings, drastically reducing electron availability."}, {"id": "n22", "exam": "NEET 2013", "topic": "Name Reactions & Degradation", "text": "Which reagent is used in Gabriel phthalimide synthesis to convert potassium phthalimide to N-alkylphthalimide?", "options": ["Alkyl halide (R-X)", "Aryl halide (Ar-X)", "Alkyl cyanide (R-CN)", "Acyl chloride (R-COCl)"], "correct": 0, "explanation": "Potassium phthalimide undergoes nucleophilic substitution with primary alkyl halides (R-X)."}, {"id": "n23", "exam": "AIPMT 2012", "topic": "Distinction & Separation Tests", "text": "A primary amine can be distinguished from secondary and tertiary amines by reacting with:", "options": ["CHCl3 and ethanolic KOH", "Tollens' reagent", "Fehling's solution", "Br2 in CS2"], "correct": 0, "explanation": "Carbylamine test (CHCl3 + alc. KOH) produces foul-smelling isocyanide only with primary amines."}, {"id": "n24", "exam": "AIPMT 2011", "topic": "Diazonium Salts & Coupling Reactions", "text": "In the Sandmeyer reaction, benzenediazonium chloride is converted to chlorobenzene using:", "options": ["Cu2Cl2 / HCl", "Cu powder / HCl", "Cl2 / FeCl3", "HCl / H2O"], "correct": 0, "explanation": "Sandmeyer reaction uses copper(I) chloride (Cu2Cl2) in HCl."}, {"id": "n25", "exam": "AIPMT 2010", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following represents the correct order of solubility in water?", "options": ["C2H5NH2 > (C2H5)2NH > C6H5NH2", "C6H5NH2 > (C2H5)2NH > C2H5NH2", "(C2H5)2NH > C2H5NH2 > C6H5NH2", "C6H5NH2 > C2H5NH2 > (C2H5)2NH"], "correct": 0, "explanation": "Solubility decreases with increasing hydrophobic hydrocarbon part: ethylamine > diethylamine > aniline (insoluble)."}, {"id": "n26", "exam": "AIPMT 2009", "topic": "Electrophilic Aromatic Substitution", "text": "Aniline on direct bromination with Br2 water gives 2,4,6-tribromoaniline because:", "options": ["-NH2 group is strongly activating and o,p-directing", "-NH2 group is meta-directing", "Benzene ring is deactivated by -NH2", "Bromine is a weak electrophile"], "correct": 0, "explanation": "+R resonance donation by -NH2 powerfully activates the ring at all ortho and para positions."}, {"id": "n27", "exam": "AIPMT 2008", "topic": "Name Reactions & Degradation", "text": "Which of the following amides yields propan-1-amine on Hoffmann degradation?", "options": ["Butanamide", "Propanamide", "Ethanamide", "Pentanamide"], "correct": 0, "explanation": "Hoffmann degradation causes loss of one carbon atom, so butanamide (4C) produces propan-1-amine (3C)."}, {"id": "n28", "exam": "AIPMT 2007", "topic": "Diazonium Salts & Coupling Reactions", "text": "The azo dye obtained by coupling benzenediazonium chloride with phenol has the formula:", "options": ["p-Hydroxyazobenzene", "o-Hydroxyazobenzene", "Azobenzene", "p-Aminoazobenzene"], "correct": 0, "explanation": "Coupling with phenol occurs selectively at the para position, forming p-hydroxyazobenzene."}, {"id": "n29", "exam": "AIPMT 2006", "topic": "Basicity Trends & Physical Properties", "text": "The correct order of basic strength of methylamines in chlorobenzene solution is:", "options": ["(CH3)3N > (CH3)2NH > CH3NH2", "(CH3)2NH > CH3NH2 > (CH3)3N", "CH3NH2 > (CH3)2NH > (CH3)3N", "(CH3)2NH > (CH3)3N > CH3NH2"], "correct": 3, "explanation": "In non-aqueous or gas phase, basicity follows inductive order closely: 2\u00b0 > 3\u00b0 > 1\u00b0."}, {"id": "n30", "exam": "AIPMT 2005", "topic": "Distinction & Separation Tests", "text": "Which of the following compounds gives a yellow oily liquid on reaction with nitrous acid?", "options": ["Diethylamine (secondary amine)", "Ethylamine (primary amine)", "Triethylamine (tertiary amine)", "Aniline"], "correct": 0, "explanation": "Secondary amines react with nitrous acid to form yellow oily N-nitrosamines: (C2H5)2N-N=O."}, {"id": "n31", "exam": "AIPMT 2004", "topic": "Name Reactions & Degradation", "text": "The reduction of nitroalkanes with catalytic H2/Ni produces:", "options": ["Primary amine", "Secondary amine", "Tertiary amine", "Nitrile"], "correct": 0, "explanation": "Catalytic hydrogenation of nitroalkanes converts -NO2 to -NH2, yielding alkanamines."}, {"id": "n32", "exam": "AIPMT 2003", "topic": "Electrophilic Aromatic Substitution", "text": "Aniline reacts with excess methyl iodide in presence of Na2CO3 to eventually yield:", "options": ["Trimethylphenylammonium iodide", "N-Methylaniline", "N,N-Dimethylaniline", "Acetanilide"], "correct": 0, "explanation": "Exhaustive methylation of aniline produces the quaternary ammonium salt: [C6H5N(CH3)3]+ I-."}, {"id": "n33", "exam": "AIPMT 2002", "topic": "Diazonium Salts & Coupling Reactions", "text": "When aniline is treated with NaNO2 and HCl at 0\u20135\u00b0C, the product is:", "options": ["Benzenediazonium chloride", "Chlorobenzene", "Phenol", "Nitrobenzene"], "correct": 0, "explanation": "Diazotisation of aniline at 273\u2013278 K yields benzenediazonium chloride."}, {"id": "n34", "exam": "AIPMT 2001", "topic": "Basicity Trends & Physical Properties", "text": "Aliphatic amines are stronger bases than ammonia primarily due to:", "options": ["+I effect of alkyl groups", "-I effect of alkyl groups", "Resonance effect", "High electronegativity of carbon"], "correct": 0, "explanation": "Alkyl groups release electron density towards nitrogen (+I effect), stabilizing the conjugate ammonium cation."}, {"id": "n35", "exam": "AIPMT 2000", "topic": "Name Reactions & Degradation", "text": "Reduction of nitriles using sodium and ethanol is specifically known as:", "options": ["Mendius reaction", "Stephen reaction", "Cannizzaro reaction", "Clemmensen reduction"], "correct": 0, "explanation": "Mendius reduction uses nascent hydrogen from Na + C2H5OH to reduce nitriles to primary amines."}, {"id": "n36", "exam": "NEET 2024", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following amines has the lowest pKb value in aqueous solution?", "options": ["(C2H5)2NH", "(C2H5)3N", "C2H5NH2", "NH3"], "correct": 0, "explanation": "Lowest pKb means strongest base: diethylamine (pKb = 3.00) is the strongest base among ethylamines in water."}, {"id": "n37", "exam": "NEET 2023", "topic": "Electrophilic Aromatic Substitution", "text": "The major product formed when acetanilide undergoes bromination with Br2 in acetic acid followed by acidic hydrolysis is:", "options": ["4-Bromoaniline", "2-Bromoaniline", "2,4,6-Tribromoaniline", "3-Bromoaniline"], "correct": 0, "explanation": "Para position is less sterically hindered, yielding 4-bromoacetanilide, which hydrolyses to 4-bromoaniline."}, {"id": "n38", "exam": "NEET 2022", "topic": "Diazonium Salts & Coupling Reactions", "text": "Diazonium fluoroborate on heating with aqueous sodium nitrite in presence of copper gives:", "options": ["Nitrobenzene", "Fluorobenzene", "Phenol", "Benzene"], "correct": 0, "explanation": "ArN2+BF4- + NaNO2 --Cu, heat--> ArNO2 + N2 + NaBF4."}, {"id": "n39", "exam": "NEET 2021", "topic": "Name Reactions & Degradation", "text": "Which of the following reactions cannot be used to prepare an amine containing one carbon more than the starting alkyl halide?", "options": ["R-X + KCN followed by reduction", "R-X + NH3 (ammonolysis)", "R-X + NaCN followed by LiAlH4", "R-X + KCN followed by catalytic H2/Ni"], "correct": 1, "explanation": "Ammonolysis retains the same carbon chain length, whereas cyanide substitution adds one carbon."}, {"id": "n40", "exam": "NEET 2020", "topic": "Basicity Trends & Physical Properties", "text": "The order of boiling point for compounds of comparable molar mass: butan-1-ol, butan-1-amine, diethylamine is:", "options": ["butan-1-ol > butan-1-amine > diethylamine", "butan-1-amine > butan-1-ol > diethylamine", "diethylamine > butan-1-amine > butan-1-ol", "butan-1-ol > diethylamine > butan-1-amine"], "correct": 0, "explanation": "Oxygen has higher electronegativity (3.5) than nitrogen (3.0), making alcohol H-bonds stronger than amine H-bonds."}, {"id": "n41", "exam": "NEET 2019", "topic": "Electrophilic Aromatic Substitution", "text": "Why does nitration of aniline give 47% meta product?", "options": ["Anilinium ion formed in conc. acid is meta-directing", "-NH2 is meta-directing", "HNO3 acts as a base", "Nitro group is ortho-directing"], "correct": 0, "explanation": "Protonation in strong acid converts -NH2 to -NH3+, which is meta-directing."}, {"id": "n42", "exam": "NEET 2018", "topic": "Distinction & Separation Tests", "text": "A compound with formula C4H11N on reaction with Hinsberg reagent forms a solid soluble in alkali. The compound must be:", "options": ["A primary amine", "A secondary amine", "A tertiary amine", "A quaternary salt"], "correct": 0, "explanation": "Primary amines form N-alkylbenzenesulphonamides with an acidic hydrogen, dissolving in alkali."}, {"id": "n43", "exam": "NEET 2017", "topic": "Diazonium Salts & Coupling Reactions", "text": "Benzenediazonium chloride reacts with fluoroboric acid (HBF4) to form an insoluble precipitate of:", "options": ["Benzenediazonium fluoroborate", "Fluorobenzene", "Boron trifluoride", "Nitrobenzene"], "correct": 0, "explanation": "ArN2+Cl- + HBF4 yields insoluble, stable benzenediazonium fluoroborate [ArN2]+[BF4]-."}, {"id": "n44", "exam": "NEET 2016", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following compounds has the lowest boiling point?", "options": ["Trimethylamine", "Propylamine", "Methylethylamine", "Propan-1-ol"], "correct": 0, "explanation": "Trimethylamine is a tertiary amine with no N-H bonds; it cannot form intermolecular hydrogen bonds."}, {"id": "n45", "exam": "NEET 2015", "topic": "Name Reactions & Degradation", "text": "The intermediate formed during Hoffmann bromamide degradation before rearrangement is:", "options": ["N-Bromoamide", "Alkyl isocyanide", "Carbocation", "Carbene"], "correct": 0, "explanation": "Reaction of amide with Br2 and base first forms an N-bromoamide intermediate."}, {"id": "n46", "exam": "NEET 2014", "topic": "Electrophilic Aromatic Substitution", "text": "Treatment of aniline with benzoyl chloride in presence of aqueous NaOH is known as:", "options": ["Schotten-Baumann reaction", "Sandmeyer reaction", "Gatterman reaction", "Balz-Schiemann reaction"], "correct": 0, "explanation": "Benzoylation of amines or phenols in the presence of base is the Schotten-Baumann reaction."}, {"id": "n47", "exam": "NEET 2013", "topic": "Diazonium Salts & Coupling Reactions", "text": "Azo dyes are characterized by the presence of which chromophore group?", "options": ["-N=N- (azo group)", "-NO2 group", "-C=O group", "-NH2 group"], "correct": 0, "explanation": "Azo dyes contain the -N=N- azo linkage joining two aromatic systems."}, {"id": "n48", "exam": "AIPMT 2012", "topic": "Basicity Trends & Physical Properties", "text": "The conjugate acid of which of the following is most stable in aqueous solution?", "options": ["(CH3)2NH", "CH3NH2", "(CH3)3N", "NH3"], "correct": 0, "explanation": "Dimethylammonium cation is stabilized by both inductive effect (+I) and favorable hydration without severe steric clash."}, {"id": "n49", "exam": "AIPMT 2011", "topic": "Name Reactions & Degradation", "text": "Which of the following statements about Gabriel phthalimide synthesis is FALSE?", "options": ["Aromatic primary amines are easily prepared by this method", "Potassium phthalimide acts as nucleophile", "Alkyl halides undergo SN2 attack", "Aliphatic primary amines are obtained pure"], "correct": 0, "explanation": "Aromatic primary amines cannot be prepared because aryl halides do not undergo nucleophilic substitution."}, {"id": "n50", "exam": "AIPMT 2010", "topic": "Distinction & Separation Tests", "text": "Which amine will not react with acetyl chloride?", "options": ["Triethylamine", "Ethylamine", "Dimethylamine", "Aniline"], "correct": 0, "explanation": "Acylation requires a replaceable hydrogen atom on nitrogen, so tertiary amines do not react."}, {"id": "n51", "exam": "AIPMT 2009", "topic": "Diazonium Salts & Coupling Reactions", "text": "Reaction of benzenediazonium chloride with Cu/HBr gives bromobenzene. This is:", "options": ["Gatterman reaction", "Sandmeyer reaction", "Wurtz reaction", "Finkelstein reaction"], "correct": 0, "explanation": "Using Cu powder with halogen acid is the Gatterman reaction."}, {"id": "n52", "exam": "AIPMT 2008", "topic": "Basicity Trends & Physical Properties", "text": "The IUPAC name of C6H5NHCH3 is:", "options": ["N-Methylaniline (or N-Methylbenzenamine)", "Methylphenylamine", "Aminotoluene", "Toluidine"], "correct": 0, "explanation": "The compound is N-methylaniline or N-methylbenzenamine."}, {"id": "n53", "exam": "AIPMT 2007", "topic": "Electrophilic Aromatic Substitution", "text": "Sulphanilic acid is insoluble in non-polar organic solvents because:", "options": ["It exists as a dipolar Zwitter ion", "It is non-polar", "It has very low melting point", "It contains no nitrogen"], "correct": 0, "explanation": "The dipolar Zwitterion structure (+NH3-C6H4-SO3-) confers strong electrostatic crystal lattice forces."}, {"id": "n54", "exam": "AIPMT 2006", "topic": "Name Reactions & Degradation", "text": "The conversion of an amide into an amine with one less carbon atom is:", "options": ["Hoffmann degradation", "Gabriel synthesis", "Mendius reduction", "Stephen reduction"], "correct": 0, "explanation": "Hoffmann bromamide degradation shortens the carbon chain by one carbon atom."}, {"id": "n55", "exam": "AIPMT 2005", "topic": "Diazonium Salts & Coupling Reactions", "text": "Which of the following is used to test for primary amines?", "options": ["Carbylamine test", "Tollens' test", "Lucas test", "Iodoform test"], "correct": 0, "explanation": "Carbylamine test is specific to primary amines."}, {"id": "n56", "exam": "AIPMT 2004", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following is the most volatile?", "options": ["(CH3)3N", "CH3CH2CH2NH2", "CH3CH2NHCH3", "CH3CH2CH2OH"], "correct": 0, "explanation": "Trimethylamine has no intermolecular hydrogen bonding, giving it the lowest boiling point and highest volatility."}, {"id": "n57", "exam": "AIPMT 2003", "topic": "Electrophilic Aromatic Substitution", "text": "Aniline on reaction with benzoyl chloride in pyridine gives:", "options": ["N-Phenylbenzamide", "Acetanilide", "Benzanilide", "N-Methylbenzamide"], "correct": 0, "explanation": "Reaction of aniline with C6H5COCl yields N-phenylbenzamide (benzanilide)."}, {"id": "n58", "exam": "AIPMT 2002", "topic": "Distinction & Separation Tests", "text": "The Hinsberg reagent reacts with primary amine to give a product which dissolves in KOH due to:", "options": ["Acidic hydrogen on nitrogen", "Basic nitrogen", "Presence of phenyl group", "Sulphonyl oxygen"], "correct": 0, "explanation": "Strong electron-withdrawing -SO2- group makes the remaining N-H hydrogen acidic and soluble in KOH."}, {"id": "n59", "exam": "AIPMT 2001", "topic": "Name Reactions & Degradation", "text": "Reduction of nitrobenzene with H2 / Pd in ethanol yields:", "options": ["Aniline", "Azobenzene", "Nitrosobenzene", "Hydrazobenzene"], "correct": 0, "explanation": "Catalytic hydrogenation of nitrobenzene quantitatively yields aniline."}, {"id": "n60", "exam": "AIPMT 2000", "topic": "Diazonium Salts & Coupling Reactions", "text": "Treatment of arenediazonium chloride with ethanol reduces it to arene while ethanol is oxidised to:", "options": ["Ethanal (acetaldehyde)", "Ethanoic acid", "Ethene", "Diethyl ether"], "correct": 0, "explanation": "ArN2+Cl- + CH3CH2OH -> ArH + N2 + CH3CHO + HCl."}, {"id": "n61", "exam": "NEET 2023", "topic": "Basicity Trends & Physical Properties", "text": "Which of the following compounds has the highest pKb value?", "options": ["Aniline", "Methanamine", "Ethanamine", "N-Methylmethanamine"], "correct": 0, "explanation": "Highest pKb denotes the weakest base: aniline (pKb = 9.38) is the weakest base among the options."}, {"id": "n62", "exam": "NEET 2022", "topic": "Name Reactions & Degradation", "text": "The number of alpha-hydrogens in the amide that produces ethanamine on Hoffmann degradation is:", "options": ["2", "1", "3", "0"], "correct": 0, "explanation": "The precursor amide is propanamide (CH3CH2CONH2), which has 2 alpha-hydrogens on C2."}, {"id": "n63", "exam": "NEET 2021", "topic": "Electrophilic Aromatic Substitution", "text": "The activating influence of -NH2 in aniline can be reduced by:", "options": ["Acetylation", "Nitration", "Sulphonation", "Reduction"], "correct": 0, "explanation": "Acetylation converts -NH2 into -NHCOCH3, where the lone pair is delocalised into the carbonyl group."}, {"id": "n64", "exam": "NEET 2020", "topic": "Diazonium Salts & Coupling Reactions", "text": "Orange dye p-hydroxyazobenzene is prepared by coupling benzenediazonium chloride with:", "options": ["Phenol in basic medium", "Aniline in acidic medium", "Phenol in strongly acidic medium", "Benzene in neutral medium"], "correct": 0, "explanation": "Phenol couples in alkaline medium (pH 9-10) to form p-hydroxyazobenzene, an orange azo dye."}, {"id": "n65", "exam": "NEET 2019", "topic": "Distinction & Separation Tests", "text": "A gaseous amine with fishy odour having formula (CH3)3N is classified as a:", "options": ["Tertiary amine", "Primary amine", "Secondary amine", "Quaternary salt"], "correct": 0, "explanation": "Trimethylamine has all three hydrogens of ammonia replaced by methyl groups: tertiary amine."}];
+
+    let currentMode = { kcet: 'doc', neet: 'doc' };
+    let showAnswerKey = { kcet: true, neet: true };
+    let activeFilter = { kcet: 'All', neet: 'All' };
+    let userSelections = {};
+
+    function showTab(tabName) {
+      document.getElementById('view-home').style.display = tabName === 'home' ? 'block' : 'none';
+      document.getElementById('view-kcet').style.display = tabName === 'kcet' ? 'block' : 'none';
+      document.getElementById('view-neet').style.display = tabName === 'neet' ? 'block' : 'none';
+      document.getElementById('view-notes').style.display = tabName === 'notes' ? 'block' : 'none';
+
+      document.querySelectorAll('.top-nav-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('nav-' + tabName);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openBankMode(bank, mode) {
+      showTab(bank);
+      setMode(bank, mode);
+    }
+
+    function setMode(bank, mode) {
+      currentMode[bank] = mode;
+      document.getElementById(`${bank}-mode-doc`).classList.toggle('active', mode === 'doc');
+      document.getElementById(`${bank}-mode-quiz`).classList.toggle('active', mode === 'quiz');
+      renderBank(bank);
+    }
+
+    function toggleAnswers(bank) {
+      showAnswerKey[bank] = !showAnswerKey[bank];
+      const btn = document.getElementById(`${bank}-toggle-ans`);
+      btn.innerText = showAnswerKey[bank] ? 'Hide Answer Key' : 'Show Answer Key';
+      renderBank(bank);
+    }
+
+    function filterCategory(bank, cat, element) {
+      activeFilter[bank] = cat;
+      const pillsContainer = document.getElementById(`${bank}-pills`);
+      pillsContainer.querySelectorAll('.pill').forEach(p => {
+        p.classList.remove('active');
+        p.classList.remove('active-neet');
+      });
+      if (bank === 'kcet') element.classList.add('active');
+      else element.classList.add('active-neet');
+      renderBank(bank);
+    }
+
+    function filterList(bank) {
+      renderBank(bank);
+    }
+
+    function handleQuizSelect(bank, qId, selectedIdx, correctIdx) {
+      userSelections[qId] = selectedIdx;
+      updateHomeStats();
+      renderBank(bank);
+    }
+
+    function updateHomeStats() {
+      let kcetAnswered = 0, kcetCorrect = 0;
+      kcetData.forEach(q => {
+        if (userSelections[q.id] !== undefined) {
+          kcetAnswered++;
+          if (userSelections[q.id] === q.correct) kcetCorrect++;
+        }
+      });
+      let kcetPct = kcetAnswered > 0 ? Math.round((kcetCorrect / kcetAnswered) * 100) : 0;
+      document.getElementById('kcet-home-stat').innerText = `${kcetAnswered} / ${kcetData.length}`;
+      document.getElementById('kcet-home-score').innerText = `Score: ${kcetCorrect} correct (${kcetPct}%)`;
+
+      let neetAnswered = 0, neetCorrect = 0;
+      neetData.forEach(q => {
+        if (userSelections[q.id] !== undefined) {
+          neetAnswered++;
+          if (userSelections[q.id] === q.correct) neetCorrect++;
+        }
+      });
+      let neetPct = neetAnswered > 0 ? Math.round((neetCorrect / neetAnswered) * 100) : 0;
+      document.getElementById('neet-home-stat').innerText = `${neetAnswered} / ${neetData.length}`;
+      document.getElementById('neet-home-score').innerText = `Score: ${neetCorrect} correct (${neetPct}%)`;
+    }
+
+    function renderBank(bank) {
+      const container = document.getElementById(`${bank}-questions-list`);
+      const dataset = bank === 'kcet' ? kcetData : neetData;
+      const searchVal = document.getElementById(`${bank}-search`).value.toLowerCase().trim();
+      const catVal = activeFilter[bank];
+      const mode = currentMode[bank];
+      const showAnswers = showAnswerKey[bank];
+
+      container.innerHTML = '';
+
+      let filtered = dataset.filter(q => {
+        const matchesCat = catVal === 'All' || q.topic === catVal;
+        const matchesSearch = !searchVal || 
+          q.text.toLowerCase().includes(searchVal) || 
+          q.topic.toLowerCase().includes(searchVal) ||
+          q.exam.toLowerCase().includes(searchVal);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<div style="text-align:center; padding: 40px; color: #94a3b8;">No questions match your filter or search query.</div>';
+        return;
+      }
+
+      filtered.forEach((q, index) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.id = `card-${q.id}`;
+
+        const letters = ['A', 'B', 'C', 'D'];
+        const userChoice = userSelections[q.id];
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+          let extraClass = '';
+          if (mode === 'doc') {
+            if (showAnswers && optIdx === q.correct) extraClass = 'show-correct';
+          } else {
+            if (userChoice !== undefined) {
+              if (optIdx === q.correct) extraClass = 'show-correct';
+              else if (userChoice === optIdx && optIdx !== q.correct) extraClass = 'selected-wrong';
+            }
+          }
+
+          const clickAttr = mode === 'quiz' ? `onclick="handleQuizSelect('${bank}', '${q.id}', ${optIdx}, ${q.correct})"` : '';
+
+          return `
+            <div class="option-item ${extraClass}" ${clickAttr}>
+              <span class="opt-letter">${letters[optIdx]}</span>
+              <span>${opt}</span>
+            </div>
+          `;
+        }).join('');
+
+        let solutionHtml = '';
+        const shouldShowSolution = (mode === 'doc' && showAnswers) || (mode === 'quiz' && userChoice !== undefined);
+
+        if (shouldShowSolution) {
+          solutionHtml = `
+            <div class="solution-box">
+              <div class="sol-header">Correct Answer: Option ${letters[q.correct]} • ${q.options[q.correct]}</div>
+              <div class="sol-text">${q.explanation}</div>
+            </div>
+          `;
+        }
+
+        const isNeet = bank === 'neet';
+
+        card.innerHTML = `
+          <div class="q-card-header">
+            <div class="q-id-badge">
+              <span class="q-num-box ${isNeet ? 'neet-bg' : ''}">Q${index + 1}</span>
+              <span class="q-exam-year">${q.exam}</span>
+            </div>
+            <span class="q-topic-tag ${isNeet ? 'neet-tag' : ''}">${q.topic}</span>
+          </div>
+          <div class="q-text">${q.text}</div>
+          <div class="options-wrap">
+            ${optionsHtml}
+          </div>
+          ${solutionHtml}
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderBank('kcet');
+      renderBank('neet');
+      updateHomeStats();
+    });
+  </script>
+</body>
+</html>
